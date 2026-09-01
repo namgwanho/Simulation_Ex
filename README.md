@@ -31,7 +31,7 @@ X_orig <- cbind(x1_orig, x2_orig, x3_orig)
 - Injects the loss gradient of the prediction model into the shift-corrected EIF to construct a pseudo-gradient ($\psi$) for parameter updates.
 - Solves $\sum \psi(\theta) = 0$ via optimization, ultimately converging to the optimal parameter $\theta$ of the unobserved target distribution.
 
-## Experimental Results
+## Simulation Results
 
 - To ensure stable convergence, the initial parameter $\theta$ for the DEAL optimization was initialized using the estimates derived from the baseline IPW (Inverse Probability Weighting) regression model.
 - The figure below compares the parameter estimation accuracy and target prediction errors (RMSE, MAE) across the three denominator stabilization strategies (PureH, Clip0.01, GLM).
