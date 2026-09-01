@@ -35,10 +35,22 @@ This simulation study compares the following methodologies
 
 ## Simulation Results
 
-- To ensure stable convergence, the initial parameter $\theta$ for the DEAL optimization was initialized using the estimates derived from the baseline IPW (Inverse Probability Weighting) regression model.
-- The figure below compares the parameter estimation accuracy and target prediction errors (RMSE, MAE) across the three denominator stabilization strategies (PureH, Clip0.01, GLM).
+| Metric | Naive | IPW | DEAL | ORACLE |
+| :--- | :--- | :--- | :--- | :--- |
+| **beta 0** | 0.0001 | 0.3371 | 0.4014 | 0.4024 |
+| **beta 1** | -0.2474 | -0.2159 | -0.2089 | -0.2063 |
+| **beta 2** | 0.2477 | 0.2124 | 0.1925 | 0.1992 |
+| **beta 3** | 0.5031 | 0.4294 | 0.4033 | 0.4024 |
+| **RMSE** | 0.7045 | 0.6357 | 0.6650 | 0.6240 |
+| **MAE** | 0.5637 | 0.5068 | 0.5312 | 0.4950 |
 
-![Simulation Results](./image_a9bda6.png)
+## Repository Structure
+
+
+## Requiremets
+R
+
+## Research Status
 
 
 ## Acknowledgement
