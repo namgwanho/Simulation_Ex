@@ -3,6 +3,7 @@
 ## Background 
 *   In real-world scenarios, distribution shifts frequently occur between source and target domains. If the target labels ($Y$) are observed, the label shift problem can be addressed simply by calculating the density ratio $\rho$. However, this repository focuses on Unsupervised Domain Adaptation (UDA), a much more practical and challenging setting where the target labels remain completely unobserved.
 
+## Simulation Setting
 ```R
 # 0. Set Seed & Sample Size
 set.seed(42)
@@ -29,7 +30,7 @@ X_orig <- cbind(x1_orig, x2_orig, x3_orig)
 # y = b0 + b1*x1 + b2*x2 + b3*x3
 x_s_orig <- X_orig[1:n0, ]
 x_t_orig <- X_orig[(n0+1):N, ]
-'''
+```
 
 ## Acknowledgement
 
