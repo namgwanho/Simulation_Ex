@@ -45,7 +45,7 @@ This simulation study compares the following methodologies
 | **MAE** | 0.5637 | 0.5068 | 0.5312 | 0.4950 |
 
 ## Repository Structure
-Deal sim.R - simulation code for Deak=l algorithm
+Deal sim.R - simulation code for Deal algorithm
 
 ## Requiremets
 R
