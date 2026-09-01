@@ -1,4 +1,4 @@
-# unsupervied domain adaption under label shift
+# DEAL: Debiased learning for unsupervised domain adaptation under label shift
 
 ## Background 
 *   In real-world, distribution shifts frequently occur between source and target domains. If the target labels ($Y$) are observed, the label shift problem can be addressed simply by calculating the density ratio $\rho$. However, this repository focuses on Unsupervised Domain Adaptation (UDA), a much more practical and challenging setting where the target labels remain completely unobserved.
@@ -25,6 +25,19 @@ x2_orig <-  0.5 * Y_orig + rnorm(N, 0, 1)
 x3_orig <-        Y_orig + rnorm(N, 0, 1)
 X_orig <- cbind(x1_orig, x2_orig, x3_orig)
 ```
+## Method
+
+- Transitions the Doubly flexible EIF from simple scalar estimation into an estimating equation for model parameter ($\theta$) optimization.
+- Injects the loss gradient of the prediction model into the shift-corrected EIF to construct a pseudo-gradient ($\psi$) for parameter updates.
+- Solves $\sum \psi(\theta) = 0$ via optimization, ultimately converging to the optimal parameter $\theta$ of the unobserved target distribution.
+
+## Experimental Results
+
+- To ensure stable convergence, the initial parameter $\theta$ for the DEAL optimization was initialized using the estimates derived from the baseline IPW (Inverse Probability Weighting) regression model.
+- The figure below compares the parameter estimation accuracy and target prediction errors (RMSE, MAE) across the three denominator stabilization strategies (PureH, Clip0.01, GLM).
+
+![Simulation Results](./image_a9bda6.png)
+
 
 ## Acknowledgement
 
