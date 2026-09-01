@@ -30,6 +30,7 @@ X_orig <- cbind(x1_orig, x2_orig, x3_orig)
 x_s_orig <- X_orig[1:n0, ]
 x_t_orig <- X_orig[(n0+1):N, ]
 
+
 ## Acknowledgement
 
 This repository was developed with support from the 서울시립대학교 데이터 사이언스 플러스 차세대 융합인재 양성사업단 - http://dsplus.uos.ac.kr/
