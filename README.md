@@ -29,7 +29,7 @@ X_orig <- cbind(x1_orig, x2_orig, x3_orig)
 # y = b0 + b1*x1 + b2*x2 + b3*x3
 x_s_orig <- X_orig[1:n0, ]
 x_t_orig <- X_orig[(n0+1):N, ]
-
+'''
 
 ## Acknowledgement
 
