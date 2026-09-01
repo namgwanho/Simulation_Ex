@@ -1,9 +1,16 @@
 # DEAL: Debiased learning for unsupervised domain adaptation under label shift
 
-## Background 
+## Overview
 *   In real-world, distribution shifts frequently occur between source and target domains. If the target labels ($Y$) are observed, the label shift problem can be addressed simply by calculating the density ratio $\rho$. However, this repository focuses on Unsupervised Domain Adaptation (UDA), a much more practical and challenging setting where the target labels remain completely unobserved.
-
-## Simulation Setting
+*   The objective of DEAL is to discover the optimal model parameters for the target distribution even when target labels ($Y$) are completely unobserved by leveraging the Efficient Influence Function based on a doubly flexible estimator to robustly combine an imperfect prediction model and the density ratio ($\rho$)
+  
+## Method
+This simulation study compares the following methodologies
+*   Naive
+*   IPW(importance wieghted estimator
+*   Deal
+*   Oracle
+  
 ```R
 set.seed(1)
 N <- 1000
