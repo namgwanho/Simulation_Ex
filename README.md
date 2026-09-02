@@ -1,4 +1,4 @@
-# DEAL: Debiased learning for unsupervised domain adaptation under label shift
+# Unsupervised domain adaptation under label shift 
 
 ## Overview
  Distribution shifts are occured between source and target domains. If the target labels ($Y$) are observed, the label shift problem can be addressed simply by calculating the density ratio $\rho$.
@@ -11,7 +11,7 @@
 This simulation study compares the following methodologies
 *   Naive
 *   IPW(importance wieghted estimator)
-*   Deal
+*   Mine
 *   Oracle
   
 \-   Transitions the Doubly flexible EIF from simple scalar estimation into an estimating equation for model parameter $\theta$ optimization. <br>
@@ -35,7 +35,7 @@ This simulation study compares the following methodologies
 
 ## Simulation Results
 
-| Metric | Naive | IPW | DEAL | ORACLE |
+| Metric | Naive | IPW | Mine | ORACLE |
 | :--- | :--- | :--- | :--- | :--- |
 | **beta 0** | 0.0001 | 0.3371 | 0.4014 | 0.4024 |
 | **beta 1** | -0.2474 | -0.2159 | -0.2089 | -0.2063 |
@@ -45,7 +45,7 @@ This simulation study compares the following methodologies
 | **MAE** | 0.5637 | 0.5068 | 0.5312 | 0.4950 |
 
 ## Repository Structure
-Deal sim.R - simulation code for Deal algorithm
+Mine sim.R - simulation code for this algorithm
 
 ## Requiremets
 R
