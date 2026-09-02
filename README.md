@@ -1,4 +1,4 @@
-# Unsupervised domain adaptation with Label Shift
+# Debiased learning for unsupervised domain adaptation under label shift
 
 ## Overview
  Distribution shifts are occured between source and target domains. If the target labels ($Y$) are observed, the label shift problem can be addressed simply by calculating the density ratio $\rho$.
