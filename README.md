@@ -1,4 +1,4 @@
-# Unsupervised domain adaptation under label shift 
+# Unsupervised domain adaptation with Label Shift
 
 ## Overview
  Distribution shifts are occured between source and target domains. If the target labels ($Y$) are observed, the label shift problem can be addressed simply by calculating the density ratio $\rho$.
