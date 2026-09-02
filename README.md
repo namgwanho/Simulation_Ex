@@ -5,7 +5,7 @@
  
   However, in Unsupervised Domain Adaptation scenarios where target labels remain completely unobserved, handling label shift becomes a highly difficult problem.
   
- The objective of DEAL is to discover the optimal model parameters for the target distribution even when target labels $Y$ are completely unobserved by leveraging the Efficient Influence Function based on a doubly flexible estimator to robustly combine an imperfect prediction model and the density ratio $\rho$
+ The objective of my algoruthm is to discover the optimal model parameters for the target distribution even when target labels $Y$ are completely unobserved by leveraging the Efficient Influence Function based on a doubly flexible estimator to robustly combine an imperfect prediction model and the density ratio $\rho$
   
 ## Method
 This simulation study compares the following methodologies
