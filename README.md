@@ -10,7 +10,7 @@
 ## Method
 This simulation study compares the following methodologies
 *   Naive
-*   IPW(importance wieghted estimator
+*   IPW(importance wieghted estimator)
 *   Deal
 *   Oracle
   
